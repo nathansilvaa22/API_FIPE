@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Veículos - Tabela FIPE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta de Veículos - Tabela FIPE</h1>
+        <div class="form-container">
+            <form id="vehicleForm">
+                <label for="marca">Escolha a Marca:</label>
+                <select id="marca" name="marca">
+                    <option value="">Selecione uma marca</option>
+                    <!-- As opções serão carregadas dinamicamente da API FIPE -->
+                </select>
+
+                <label for="modelo">Escolha o Modelo:</label>
+                <select id="modelo" name="modelo" disabled>
+                    <option value="">Selecione um modelo</option>
+                </select>
+
+                <label for="ano">Escolha o Ano:</label>
+                <select id="ano" name="ano" disabled>
+                    <option value="">Selecione o ano</option>
+                </select>
+
+                <button type="submit" id="consultarBtn">Consultar Preço</button>
+            </form>
+        </div>
+
+        <div id="resultado" class="resultado">
+            <!-- Aqui os resultados serão exibidos -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
